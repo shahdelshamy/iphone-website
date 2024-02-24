@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #000;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+header .logo {
+    width: 40px;
+    height: 40px;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+
+
+.containt {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+.containt .text {
+    color: #fff;
+    width: 40%;
+}
+
+.containt .text h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.containt .text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.containt .text a {
+    text-decoration: none;
+    background-color: #fff;
+    color: #000;
+    padding: 10px 10px;
+    border-radius: 20px;
+}
+
+.containt .product {
+    width: 30%;
+}
+
+.containt .product img {
+    width: 60%;
+}
+
+.icons {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.icons img {
+    width: 50px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.icons img:hover {
+    transform: scale(1.2);
+}
+
+
+@media (max-width: 768px) {
+    header {
+        width: 90%;
+    }
+
+    header ul li a {
+        margin: 0 3px;
+    }
+
+    .containt .text {
+        padding: 100px 0;
+        width: 60%;
+    }
+
+    .containt .text h2 {
+        font-size: 20px;
+    }
+
+    .containt .product {
+        width: 30%;
+    }
+
+    .containt .product img {
+        width: 100%;
+    }
+
+    .containt .text p {
+        margin-bottom: 30px;
+    }
+
+    .icons {
+        width: 70%;
+        bottom: unset;
+    }
+
+
+}
